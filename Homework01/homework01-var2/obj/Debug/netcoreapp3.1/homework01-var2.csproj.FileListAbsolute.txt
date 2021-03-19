@@ -1,0 +1,13 @@
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\bin\Debug\netcoreapp3.1\homework01-var2.exe
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\bin\Debug\netcoreapp3.1\homework01-var2.deps.json
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\bin\Debug\netcoreapp3.1\homework01-var2.runtimeconfig.json
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\bin\Debug\netcoreapp3.1\homework01-var2.runtimeconfig.dev.json
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\bin\Debug\netcoreapp3.1\homework01-var2.dll
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\bin\Debug\netcoreapp3.1\homework01-var2.pdb
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\obj\Debug\netcoreapp3.1\homework01-var2.csprojAssemblyReference.cache
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\obj\Debug\netcoreapp3.1\homework01-var2.AssemblyInfoInputs.cache
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\obj\Debug\netcoreapp3.1\homework01-var2.AssemblyInfo.cs
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\obj\Debug\netcoreapp3.1\homework01-var2.csproj.CoreCompileInputs.cache
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\obj\Debug\netcoreapp3.1\homework01-var2.dll
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\obj\Debug\netcoreapp3.1\homework01-var2.pdb
+C:\Users\Snak101y\Documents\Teme Cegeka\homework01-var2\homework01-var2\obj\Debug\netcoreapp3.1\homework01-var2.genruntimeconfig.cache

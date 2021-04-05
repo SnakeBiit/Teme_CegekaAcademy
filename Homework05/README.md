@@ -1,5 +1,3 @@
-# Car Dealership Database
-<br/>
 <h1>Car Dealership.bak</h1>
 This file contains my database backup with tables and my records.
 <br/>

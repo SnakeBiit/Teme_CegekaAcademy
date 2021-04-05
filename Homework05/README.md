@@ -5,6 +5,5 @@ This file contains my database backup with tables and my records.
 This file contains all the SELECTS from the exercise 3.
 <br/>
 <h1>Database Design</h1>
-<br/>
-![DatabaseDesign](DatabaseDesign.PNG)
+![DatabaseDesign](/Teme_CegekaAcademy/Homework05/DatabaseDesign.PNG )
 

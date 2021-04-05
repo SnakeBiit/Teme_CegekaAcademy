@@ -1,0 +1,42 @@
+3.a 
+SELECT i.AvailableCarId,c.Name, i.BrandId
+from CarCompany c
+INNER JOIN Inventory i
+ON c.BrandId = i.BrandId
+GROUP BY  c.Name,i.AvailableCarId,i.BrandId
+ORDER BY C.Name
+3.b
+SELECT m.ModelName,i.AvailableCarId,p.Features,p.Color,p.Engine
+from Packages p	
+INNER JOIN Inventory i on p.PackageId = i.PackageId  
+INNER JOIN Model m on p.ModelId = m.ModelId
+WHERE m.ModelName = 'Seria 3'
+3.c
+SELECT m.ModelName, p.Features 
+from Packages p	
+INNER JOIN Model m on p.ModelId = m.ModelId
+WHERE m.ModelName = 'Seria 3'
+3.d
+SELECT [Feedback]
+FROM [Car Dealership].[dbo].[Order] as d
+WHERE d.Date > CONVERT(datetime,'2021-03-05')
+3.e
+SELECT c.CustomerId,c.LastName,c.FirstName,c.Adress,c.Phone
+FROM [Car Dealership].[dbo].[Customer] c
+JOIN [Car Dealership].[dbo].[Order] o ON c.CustomerId <> o.CustomerId
+3.f
+SELECT i.AvailableCarId,i.ModelId,m.ModelName,m.FabricationYear
+  FROM [Car Dealership].[dbo].[Inventory] i
+  INNER JOIN Model m on m.ModelId = i.ModelId
+  WHERE m.FabricationYear = 2021
+3.g
+SELECT m.ModelName,p.PackageName,p.Engine,p.Color,p.Features,p.Price
+FROM [Car Dealership].[dbo].[Model] m
+INNER JOIN [Car Dealership].[dbo].[Packages] p ON m.ModelId = p.ModelId
+WHERE p.Price BETWEEN 20000 AND 70000
+3.h
+SELECT m.ModelName,i.AvailableCarId,p.PackageName,p.Engine,p.Transmision,p.Features,p.Color
+from Packages p	
+INNER JOIN Inventory i on p.PackageId = i.PackageId  
+INNER JOIN Model m on p.ModelId = m.ModelId
+WHERE p.Engine = 'Gas' AND p.Transmision = 'Manual'

@@ -20,7 +20,13 @@ class Customer
     addToFavorites(product: Product)
     {
         this.products.push(product);
+        this.increaseLikeability(product);
+        this.calculatePrice(product);
+    }
+    increaseLikeability(product: Product){
         product.likeability+=1;
-        if(product.price > 1000) console.log("Hello! Product "+ product.name + " has a 10% discount if you buy it right now!");
+    }
+    calculatePrice(product: Product){
+         if(product.price > 1000) console.log("Hello! Product "+ product.name + " has a 10% discount if you buy it right now!");
     }
 }

@@ -19,18 +19,19 @@ class Product
         if(this.stockQuantity == 0) this.stockQuantity = num;
     }
 
-    addToStock(){
+    addProductToStock(){
         this.stockQuantity++;
     }
    
-    addDiscount(this: Product)
+    addDiscountToProduct(this: Product)
     {
         if(this.price > 1000)
         {
             console.log("Hello! Product "+ this.name + " has a 10% discount!");
-            this.price = this.price - this.price*10/100;
+            this.price -= this.price*10/100;
         } 
     }
+    
     addDiscountLikeability(this: Product)
     {
         if(this.likeability > 20) this.price -= this.price*5/100;

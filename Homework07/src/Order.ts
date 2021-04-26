@@ -14,7 +14,7 @@ class Order
 
     addOrders(orderItem:OrderItem)
     {
-        orderItem.item.addDiscount();
+        orderItem.item.addDiscountToProduct();
         orderItem.item.addDiscountLikeability();
         this.orderedItems.push(orderItem);
     }
@@ -29,16 +29,24 @@ class Order
     CheckStock()
     {
         this.orderedItems.forEach((element, index) => {
-            if(element.item.stockQuantity < element.quantity) 
-                {
-                    console.log("Product " + element.item.name + " is out of stock!");
-                    this.orderedItems.splice(index,1);
-                }
-            if(element.item.stockQuantity >= element.quantity) element.item.stockQuantity -= element.quantity;
+            this.checkQuantity(element);
+            this.updateStock(element);
         });
     }
 
-   
+    checkQuantity(orderedItem: OrderItem)
+    {
+        if(orderedItem.item.stockQuantity < orderedItem.quantity){
+                    console.log("Product " + orderedItem.item.name + " is out of stock!");
+                    this.orderedItems.splice(this.orderedItems.indexOf(orderedItem),1);
+                }
+    }
+
+    updateStock(orderedItem: OrderItem)
+    {
+        if(orderedItem.item.stockQuantity >= orderedItem.quantity) orderedItem.item.stockQuantity -= orderedItem.quantity;
+    }
+    
     Order()
     {
         this.CheckStock();

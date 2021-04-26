@@ -1,6 +1,6 @@
 class OrderItem
 {
-    public item:Product;
+    public item: Product;
     public quantity: number;
     constructor(item: Product, quantity: number)
     {
